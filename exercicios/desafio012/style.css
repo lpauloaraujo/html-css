@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0px;
+}
+
+body p {
+    font-family: var(--fonte3);
+    line-height: 2em;
+    margin: 0px;
+    font-size: 3.5vw;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    margin: 0px;
+    padding-top: 50px;
+    font-family: var(--fonte2);
+    font-size: 10vw;
+    font-variant: small-caps;
+}
+
+header > p {
+    margin: 0px;
+    padding-bottom: 50px;
+    font-family: var(--fonte1);
+    font-size: 1em;
+}
+
+header a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+section {
+    background-color: white;
+    padding: 75px 30px;
+}
+
+section p {
+    background-color: white;
+}
+
+div {
+    padding: 75px 30px;
+}
+
+div#joaninha {
+    position: relative;
+    background-image: url('imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+    background-attachment:fixed;
+    max-height: 100vw;
+    min-height: 40vw;
+}
+
+div#papeis {
+    position: relative;
+    background-image: url('imagens/background002.jpg');
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 40vw;
+    max-height: 100vw;
+    min-height: 40vw;
+}
+
+p.emimagem {
+    position: absolute;
+    color: white;
+    font-size: 3.5vw;
+    background-color: rgba(0, 0, 0, 0.384);
+    width: 45%;
+    padding: 5px;
+    top: 50%;
+
+    transform: translate(0, -50%);
+}
