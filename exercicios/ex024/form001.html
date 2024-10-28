@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1> <!-- action é o que vai acontecer após clicar no botão de submit-->
+    <!-- Usando label para relacionnar os elementos de input atraves do id-->
+     <!--Usar metodo get pra requisitar dados não sensíveis, como um nome ou pesquisa do google. Para dados como senhas,cartão de crédito ou endereço use o post, pois os dados não aparecem na  url. DETALHA: o get permite compartilhar e só aguenta até 3000 bytes de dados, e pra imagens ou outros tipos de arquivos use o post-->
+    <form action="cadastro.php" autocomplete="off" method="get">
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
