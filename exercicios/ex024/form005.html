@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="" method="get" autocomplete="on">
+        <!--Deixas as opções com o mesmo name faz com que como se elas fossem do mesmo grupo, assim, só é possível de marcar uma-->
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="masculino"><label for="masculino">Masculino</label>
+            <input type="radio" name="sexo" id="feminino" checked><label for="feminino">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="esfut" id="futebol" checked> <label for="futebol">Futebol</label> <br>
+            <input type="checkbox" name="esbas" id="basquete" checked> <label for="basquete">Basquete</label> <br>
+            <input type="checkbox" name="esvol" id="volei"> Vôlei <br>
+            <input type="checkbox" name="esxad" id="xadrez"> Xadrez <br>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
